@@ -13,7 +13,7 @@ spec:
           name: "cel"
         params:
         - name: "filter"
-          value: "header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/master' && body.repository.full_name == 'sbybee-tutorial/mq-qm01'"
+          value: "header.match('X-GitHub-Event', 'push') && body.ref == 'refs/heads/qm1-sbybee-tutorial' && body.repository.full_name == 'sbybee-tutorial/mq-qm01'"
     bindings:
       - ref: cnkt-trigger-binding
     template:
